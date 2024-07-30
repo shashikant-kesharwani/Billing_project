@@ -278,6 +278,8 @@ Partial Class Form2
         AutoScaleDimensions = New SizeF(10F, 23F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.Cyan
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1081, 807)
         Controls.Add(Textcatagory)
         Controls.Add(Lblcatagory)
