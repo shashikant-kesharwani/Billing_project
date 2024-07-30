@@ -160,9 +160,11 @@ Partial Class Form1
         ' 
         ' Textbill
         ' 
+        Textbill.ImeMode = ImeMode.NoControl
         Textbill.Location = New Point(590, 80)
         Textbill.Multiline = True
         Textbill.Name = "Textbill"
+        Textbill.ReadOnly = True
         Textbill.Size = New Size(448, 285)
         Textbill.TabIndex = 12
         ' 
@@ -192,6 +194,8 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(12F, 28F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(255), CByte(255), CByte(128))
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1050, 546)
         Controls.Add(Lblbillpage)
         Controls.Add(Btnprint)
