@@ -42,6 +42,7 @@ Partial Class Form3
         Labblchai15 = New Label()
         Textbill = New TextBox()
         Lblbillreciept = New Label()
+        btnneworder = New Button()
         SuspendLayout()
         ' 
         ' Checksamosha
@@ -107,7 +108,7 @@ Partial Class Form3
         ' 
         Btnorder.BackColor = Color.Fuchsia
         Btnorder.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Btnorder.Location = New Point(246, 438)
+        Btnorder.Location = New Point(148, 438)
         Btnorder.Name = "Btnorder"
         Btnorder.Size = New Size(94, 41)
         Btnorder.TabIndex = 5
@@ -244,6 +245,17 @@ Partial Class Form3
         Lblbillreciept.TabIndex = 18
         Lblbillreciept.Text = "Bill Reciept"
         ' 
+        ' btnneworder
+        ' 
+        btnneworder.BackColor = Color.Red
+        btnneworder.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        btnneworder.Location = New Point(304, 438)
+        btnneworder.Name = "btnneworder"
+        btnneworder.Size = New Size(165, 41)
+        btnneworder.TabIndex = 19
+        btnneworder.Text = "New Order"
+        btnneworder.UseVisualStyleBackColor = False
+        ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -251,6 +263,7 @@ Partial Class Form3
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1010, 491)
+        Controls.Add(btnneworder)
         Controls.Add(Lblbillreciept)
         Controls.Add(Textbill)
         Controls.Add(Labblchai15)
@@ -297,4 +310,5 @@ Partial Class Form3
     Friend WithEvents Labblchai15 As Label
     Friend WithEvents Textbill As TextBox
     Friend WithEvents Lblbillreciept As Label
+    Friend WithEvents btnneworder As Button
 End Class
